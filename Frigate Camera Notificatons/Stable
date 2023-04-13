@@ -1,5 +1,5 @@
 blueprint:
-  name: Frigate Notifications (0.11.0.162) - SgtB_Max
+  name: Frigate Notifications (0.11.0.163) - SgtB_Max
   description: |
     ## Frigate Notifications
 
@@ -811,7 +811,7 @@ action:
                               caption: >-
                                 {{title}}
                                 {{message}}
-                                <a href='{{tap_action}}'>Video</a>
+                                {{tap_action}}
                             push:
                               sound: "{{sound}}"
                               interruption-level: "{{ iif(critical, 'critical', 'active') }}"
@@ -1015,7 +1015,7 @@ action:
                                     caption: >-
                                       {{title}}
                                       {{message}}
-                                      <a href='{{tap_action}}'>Video</a>                                    
+                                      {{tap_action}}                                  
                                   push:
                                     sound: "{{ iif(update, 'none', sound) }}"
                                     interruption-level: "{{ iif(critical, 'critical', 'active') }}"
