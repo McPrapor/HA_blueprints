@@ -1,5 +1,5 @@
 blueprint:
-  name: Frigate Notifications (0.11.0.16) - SgtB_Max
+  name: Frigate Notifications (0.11.0.161) - SgtB_Max
   description: |
     ## Frigate Notifications
 
@@ -807,7 +807,7 @@ action:
                             attachment:
                               url: "/api/frigate/notifications/{{id}}/{{attachment}}.jpg"
                             photo:
-                              url: "https://{{ base_url }}/api/frigate/notifications/{{id}}/{{attachment}}.jpg"
+                              url: "{{ base_url }}/api/frigate/notifications/{{id}}/{{attachment}}.jpg"
                               caption: >-
                                 Snapshot of {{trigger.payload_json["after"]["label"]}} detected on
                                 {{trigger.payload_json["after"]["camera"]}}, Event ID
@@ -1011,7 +1011,7 @@ action:
                                   attachment:
                                     url: "/api/frigate/notifications/{{id}}/{{attachment}}.jpg"
                                   photo:
-                                    url: "https://{{ base_url }}/api/frigate/notifications/{{id}}/{{attachment}}.jpg"
+                                    url: "{{ base_url }}/api/frigate/notifications/{{id}}/{{attachment}}.jpg"
                                     caption: >-
                                       Snapshot of {{trigger.payload_json["after"]["label"]}} detected on
                                       {{trigger.payload_json["after"]["camera"]}}, Event ID
